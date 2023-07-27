@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?camily=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*BARRA NAVEGACION */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #019267;
+}
+
+header .logo {
+    position: relative;
+    max-width: 80px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.bx {
+    color: black;
+    transition: transform 0.3s ease
+}
+
+.bx-user-circle {
+    font-size: 30px;
+}
+
+.bx:hover {
+    transform: scale(1.2);
+}
+
+
+/*CARDS*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.card {
+    width: 250px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00C897;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+.card button {
+    background-color: #00C897;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para diseño responsive */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+}
+

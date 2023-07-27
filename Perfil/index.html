@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="./home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section>
@@ -15,7 +15,7 @@
         </div>
         <header>
             <a href="#" class="logo"><img src="../img/logo.png"></a>
-            <ul class="navbar-menu">
+            <ul>
                 <li><a href="../Home/home.html">Inicio</a></li>
                 <li><a href="../Tarifas/tarifas.html">Tarifas</a></li>
                 <li><a href="../Nosotros/nosotros.html">Nosotros</a></li>
@@ -23,26 +23,29 @@
             </ul>
             <a class="user" href="../Perfil/index.html"><i class='bx bx-user-circle'></i></a>
         </header>
-        <div class="content">
-            <div class="textBox">
-                <h2>Mejor en bici <br><span>Movete por la ciudad en dos ruedas</span></h2>
-                <p>Ecobici es el sistema de transporte público de bicicletas compartidas que desarrolló el Gobierno de
-                    la Ciudad de Buenos Aires, brindando a quienes se mueven en la Ciudad una nueva alternativa de
-                    transporte.</p>
-                <a href="#">Mas informacion</a>
-            </div>
-            <div class="imgBox"></div>
-            <img src="../img/logo-bike2.png" class="bici">
-        </div>
-        </div>
-        <ul class="sci">
-            <li><a href="https://www.facebook.com/baecobici"><i class='bx bxl-facebook'></i></a></li>
-            <li><a href="https://www.instagram.com/baecobici/"> <i class='bx bxl-instagram'></i></a></li>
-            <li><a href="https://twitter.com/BAecobici"><i class='bx bxl-twitter'></i></a></li>
-        </ul>
-   
-
-
     </section>
+    <div class="container">
+        <img src="./img/images.png" alt="Mi foto de perfil">
+        <h1>Laura Boeto</h1>
+        <div class="info-item">
+            <i class='bx bx-envelope'></i>
+            <span>correo@email.com</span>
+        </div>
+        <div class="info-item">
+            <i class='bx bx-phone' ></i>
+            <span>+54 1122334455</span>
+        </div>
+
+        <div class="mileage">
+            <div class="mileage-box">
+                <h2>Kilómetros mensuales:</h2>
+                <p>40 km</p>
+            </div>
+            <div class="mileage-box">
+                <h2>Kilómetros totales:</h2>
+                <p>594 km</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
